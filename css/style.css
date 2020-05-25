@@ -94,6 +94,11 @@ html {
   justify-content: flex-start;
   align-items: center; }
 
+.middle-section {
+  width: 144rem;
+  height: 68.4rem;
+  background-color: #012F34; }
+
 body {
   font-family: 'Livvic', sans-serif;
   font-weight: 600;
