@@ -13,6 +13,8 @@
   .logo {
     width: 15.995rem;
     height: 4rem;
+    animation: logo-move 1s linear;
+    cursor: pointer;
   }
 
   .nav-list {
@@ -20,6 +22,8 @@
     display: flex;
     margin-right: auto;
     margin-left: 8rem;
+    animation: lists-move 1.5s ease-out 1s;
+    animation-fill-mode: backwards;
 
     &__item:not(:last-child) {
       margin-right: 4.1rem;
@@ -50,6 +54,7 @@
     padding: 1.1rem 3.05rem;
     transition: all 0.2s;
     cursor: pointer;
+    animation: button-move 1s linear;
 
     &:focus {
       outline: none;
@@ -79,6 +84,7 @@
     flex: 0 0 60%;
     font-size: 10rem;
     line-height: 10rem;
+    animation: heading-move 1s ease;
   }
 
   &__heading-coral {
@@ -97,14 +103,17 @@
     width: 4.95rem;
     height: 0.35rem;
     background-color: $color-secondary-light-blue;
+    animation: dashed-move 3s ease;
+    animation-fill-mode: backwards;
   }
 
   &__para {
     margin-bottom: 0.5rem;
+    animation: para-move 1s ease;
   }
 }
 
 
 //###################################################//
-               // MIDDLE-SECTION //
+               // MAIN-SECTION //
 // #################################################//
