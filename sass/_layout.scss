@@ -9,15 +9,6 @@
   background-color: $color-primary-green;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-
-  .user-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 111rem;
-    height: 4.8rem;
-    margin-top: 7.3rem;
-  }
 }

@@ -2,57 +2,104 @@
 // TOP NAVIGATION
 // #################################################//
 
-.logo {
-  width: 15.995rem;
-  height: 4rem;
-}
-
-.nav-list {
-  list-style: none;
+.user-nav {
   display: flex;
-  margin-right: auto;
-  margin-left: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 111rem;
+  height: 4.8rem;
+  margin-top: 7.3rem;
 
-  &__item:not(:last-child) {
-    margin-right: 4.1rem;
+  .logo {
+    width: 15.995rem;
+    height: 4rem;
   }
 
-  &__item {
-    transition: transform 0.2s;
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+    margin-left: 8rem;
 
-    &:hover {
-      color: $color-primary-coral;
-      transform: skewX(10deg);
+    &__item:not(:last-child) {
+      margin-right: 4.1rem;
+    }
+
+    &__item {
+      transition: transform 0.2s;
+
+      &:hover {
+        color: $color-primary-coral;
+        transform: skewX(10deg);
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
     }
   }
 
-  &__link {
-    text-decoration: none;
-    color: inherit;
+  .btn-light {
+    background-color: transparent;
+    color: $color-primary-white;
+    border: 2px solid $color-primary-white;
+    border-radius: 10rem;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1.1rem 3.05rem;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+
+    &:hover {
+      background-color: $color-primary-white;
+      color: $color-secondary-dark-green-3;
+    }
   }
 }
 
-.btn-light {
-  background-color: transparent;
-  color: $color-primary-white;
-  border: 2px solid $color-primary-white;
-  border-radius: 10rem;
-  font-family: inherit;
-  font-size: inherit;
-  padding: 1rem 3rem;
-  transition: all .2s;
-  cursor: pointer;
+.content {
+  padding: 12.9rem 16.6rem 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../images/bg-pattern-home-1.svg'), url("../images/bg-pattern-home-2.svg");
+  background-repeat: no-repeat;
+  background-position: top 12.9rem left -9.9rem, bottom right 16.45rem;
 
-  &:focus {
-    outline: none;
+  &__heading {
+    flex: 0 0 60%;
+    font-size: 10rem;
+    line-height: 10rem;
   }
 
-  &:active {
-    transform: translateY(2px);
+  &__heading-coral {
+    color: $color-primary-coral;
   }
 
-  &:hover {
-    background-color: $color-primary-white;
-    color: $color-secondary-dark-green-3;
+  &__para-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-self: stretch;
+  }
+
+  &__dashed {
+    width: 4.95rem;
+    height: 0.35rem;
+    background-color: $color-secondary-light-blue;
+  }
+
+  &__para {
+    margin-bottom: 0.5rem;
   }
 }
