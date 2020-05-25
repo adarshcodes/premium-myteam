@@ -1,0 +1,58 @@
+//###################################################//
+// TOP NAVIGATION
+// #################################################//
+
+.logo {
+  width: 15.995rem;
+  height: 4rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-right: auto;
+  margin-left: 8rem;
+
+  &__item:not(:last-child) {
+    margin-right: 4.1rem;
+  }
+
+  &__item {
+    transition: transform 0.2s;
+
+    &:hover {
+      color: $color-primary-coral;
+      transform: skewX(10deg);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.btn-light {
+  background-color: transparent;
+  color: $color-primary-white;
+  border: 2px solid $color-primary-white;
+  border-radius: 10rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem 3rem;
+  transition: all .2s;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:hover {
+    background-color: $color-primary-white;
+    color: $color-secondary-dark-green-3;
+  }
+}
