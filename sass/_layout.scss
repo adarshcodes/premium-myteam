@@ -1,5 +1,5 @@
 .container {
-  width: 94.8%;
+  width: 94.7%;
   margin: 0 auto;
 }
 
@@ -17,4 +17,16 @@
   width: 144rem;
   height: 68.4rem;
   background-color: $color-secondary-dark-green-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern-home-3.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right -10rem;
+
+  &__holder {
+    display: flex;
+    width: 111rem;
+    height: 44.4rem;
+  }
 }
