@@ -194,6 +194,40 @@ html {
     color: #FFF;
     margin-top: 1.6rem; }
 
+.wrapper {
+  text-align: center;
+  padding: 21rem 16.5rem 22rem 16rem; }
+  .wrapper__heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem; }
+  .wrapper .s-stories {
+    color: #79C8C7; }
+  .wrapper__cards-holder {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9.25rem; }
+  .wrapper__quotes {
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
+  .wrapper__names {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #79C8C7;
+    margin-top: 2.4rem; }
+  .wrapper__designation {
+    font-size: 1.27rem;
+    line-height: 1.8rem;
+    color: #FFF;
+    margin: 0.25rem 0 1rem 0.2rem; }
+  .wrapper__user {
+    display: block;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #C4FFFE;
+    margin: 2rem auto; }
+
 .container {
   width: 94.7%;
   margin: 0 auto; }
@@ -221,6 +255,17 @@ html {
     display: flex;
     width: 111rem;
     height: 44.4rem; }
+
+.stories {
+  width: 144rem;
+  height: 74.5rem;
+  background-color: #004047;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern-home-4-about-3.svg"), url("../images/bg-pattern-home-5.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right; }
 
 body {
   font-family: 'Livvic', sans-serif;
