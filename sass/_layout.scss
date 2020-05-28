@@ -1,5 +1,6 @@
 .container {
   width: 94.7%;
+  // width: 100%;
   margin: 0 auto;
 }
 
@@ -14,7 +15,7 @@
 }
 
 .main-section {
-  width: 144rem;
+  min-width: 144rem;
   height: 68.4rem;
   background-color: $color-secondary-dark-green-2;
   display: flex;
@@ -32,7 +33,7 @@
 }
 
 .stories {
-  width: 144rem;
+  min-width: 144rem;
   height: 74.5rem;
   background-color: $color-secondary-dark-green-1;
   display: flex;
@@ -41,4 +42,17 @@
   background-image: url("../images/bg-pattern-home-4-about-3.svg"), url("../images/bg-pattern-home-5.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
+}
+
+.cta {
+  min-width: 144rem;
+  height: 20rem;
+  background-color: $color-primary-coral;
+  display: flex;
+}
+
+.footer {
+  min-width: 144rem;
+  height: 19.6rem;
+  background-color: $color-secondary-dark-green-3;
 }

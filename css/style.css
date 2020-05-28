@@ -69,6 +69,35 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+.btn {
+  background-color: transparent;
+  border-radius: 10rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.1rem 3.05rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  animation: button-move 1s linear; }
+  .btn:focus {
+    outline: none; }
+  .btn:active {
+    transform: translateY(2px); }
+
+.btn-light {
+  color: #FFF;
+  border: 2px solid #FFF; }
+  .btn-light:hover {
+    background-color: #FFF;
+    color: #002529; }
+
+.btn-dark {
+  color: #012F34;
+  border: 2px solid #012F34;
+  animation: none; }
+  .btn-dark:hover {
+    background-color: #012F34;
+    color: #FFF; }
+
 .user-nav {
   display: flex;
   justify-content: space-between;
@@ -94,28 +123,12 @@ html {
       transition: transform 0.2s; }
       .user-nav .nav-list__item:hover {
         color: #F67E7E;
-        transform: skewX(10deg); }
+        box-shadow: 0 1rem 2rem rgba(0, 37, 41, 0.4);
+        transform: rotate(-5deg) scale(1.15); }
     .user-nav .nav-list__link {
       text-decoration: none;
-      color: inherit; }
-  .user-nav .btn-light {
-    background-color: transparent;
-    color: #FFF;
-    border: 2px solid #FFF;
-    border-radius: 10rem;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 1.1rem 3.05rem;
-    transition: all 0.2s;
-    cursor: pointer;
-    animation: button-move 1s linear; }
-    .user-nav .btn-light:focus {
-      outline: none; }
-    .user-nav .btn-light:active {
-      transform: translateY(2px); }
-    .user-nav .btn-light:hover {
-      background-color: #FFF;
-      color: #002529; }
+      color: inherit;
+      background-color: #014E56; }
 
 .content {
   padding: 12.9rem 16.6rem 25rem;
@@ -226,7 +239,76 @@ html {
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #C4FFFE;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    transition: all 0.5s;
+    cursor: pointer; }
+    .wrapper__user:hover {
+      transform: scale(1.2) rotate(360deg);
+      box-shadow: 0 1rem 5rem rgba(196, 255, 254, 0.4); }
+
+.cta-box {
+  display: flex;
+  margin: auto; }
+  .cta-box__heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    color: #012F34;
+    margin-right: 26rem; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 4.8rem 16.5rem 5rem 16.45rem; }
+  .footer-container__logo-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12.5rem; }
+  .footer-container__logo {
+    cursor: pointer;
+    margin-bottom: 2.5rem; }
+  .footer-container .footer-list {
+    list-style: none;
+    display: flex; }
+    .footer-container .footer-list__item:not(:last-child) {
+      margin-right: 4rem; }
+    .footer-container .footer-list__item {
+      transition: transform 0.2s; }
+      .footer-container .footer-list__item:hover {
+        color: #F67E7E;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        transform: rotate(5deg) scale(1.1); }
+    .footer-container .footer-list__link {
+      text-decoration: none;
+      color: inherit;
+      background-color: #002529; }
+  .footer-container__address {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-right: auto; }
+  .footer-container__social-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .footer-container__socialicons {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer-container__socialicons .icons {
+      font-size: 2.5rem;
+      color: #FFF;
+      text-decoration: none;
+      transition: all .3s; }
+      .footer-container__socialicons .icons:hover {
+        color: #F67E7E;
+        transform: rotate(360deg) scale(1.1); }
+    .footer-container__socialicons .icons:not(:last-child) {
+      margin-right: 1.6rem; }
+  .footer-container__copy {
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
 
 .container {
   width: 94.7%;
@@ -242,7 +324,7 @@ html {
   align-items: center; }
 
 .main-section {
-  width: 144rem;
+  min-width: 144rem;
   height: 68.4rem;
   background-color: #012F34;
   display: flex;
@@ -257,7 +339,7 @@ html {
     height: 44.4rem; }
 
 .stories {
-  width: 144rem;
+  min-width: 144rem;
   height: 74.5rem;
   background-color: #004047;
   display: flex;
@@ -266,6 +348,17 @@ html {
   background-image: url("../images/bg-pattern-home-4-about-3.svg"), url("../images/bg-pattern-home-5.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right; }
+
+.cta {
+  min-width: 144rem;
+  height: 20rem;
+  background-color: #F67E7E;
+  display: flex; }
+
+.footer {
+  min-width: 144rem;
+  height: 19.6rem;
+  background-color: #002529; }
 
 body {
   font-family: 'Livvic', sans-serif;
