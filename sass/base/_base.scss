@@ -1,11 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -15,5 +15,9 @@ html {
 }
 
 body {
-  
+  .container {
+    width: 94.7%;
+    // width: 100%;
+    margin: 0 auto;
+  }
 }

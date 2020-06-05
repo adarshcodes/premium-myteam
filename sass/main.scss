@@ -1,7 +1,17 @@
-@import "variables";
-@import "animation";
-@import "base";
-@import "components";
-@import "layout";
-@import "mixins";
-@import "typography";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/stories";
+@import "components/about-cards";
+
+@import "layout/navigation";
+@import "layout/cta";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";

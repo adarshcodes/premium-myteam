@@ -1,0 +1,48 @@
+//###################################################//
+// TOP NAVIGATION //
+// #################################################//
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 111rem;
+  height: 4.8rem;
+  margin-top: 7.3rem;
+
+  .logo {
+    width: 15.995rem;
+    height: 4rem;
+    animation: logo-move 1s linear;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+    margin-left: 8rem;
+    animation: lists-move 1.5s ease-out 1s;
+    animation-fill-mode: backwards;
+
+    &__item:not(:last-child) {
+      margin-right: 4.1rem;
+    }
+
+    &__item {
+      transition: transform 0.2s;
+
+      &:hover {
+        color: $color-primary-coral;
+        box-shadow: 0 1rem 2rem rgba($color-secondary-dark-green-3, .4);
+        transform: rotate(-5deg) scale(1.15);
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
+      background-color: $color-primary-green;
+    }
+  }
+}

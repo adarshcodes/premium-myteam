@@ -1,0 +1,43 @@
+//###################################################//
+// Buttons //
+// #################################################//
+
+.btn {
+  background-color: transparent;
+  border-radius: 10rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.1rem 3.05rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  animation: button-move 1s linear;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.btn-light {
+  color: $color-primary-white;
+  border: 2px solid $color-primary-white;
+
+  &:hover {
+    background-color: $color-primary-white;
+    color: $color-secondary-dark-green-3;
+  }
+}
+
+.btn-dark {
+  color: $color-secondary-dark-green-2;
+  border: 2px solid $color-secondary-dark-green-2;
+  animation: none;
+
+  &:hover {
+    background-color: $color-secondary-dark-green-2;
+    color: $color-primary-white;
+  }
+}

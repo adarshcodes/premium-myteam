@@ -5,19 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Mentor | myteam website challenge - About page</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/3aff8df930.js"></script>
 </head>
 
 <body>
 
   <div class="container">
 
-    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ HEADER-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ ABOUT-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
-    <header class="header">
+    <header class="header-about">
       <nav class="user-nav">
-        <img src="images/logo.svg" alt="top logo" class="logo">
+        <img src="../images/logo.svg" alt="top logo" class="logo">
 
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -31,92 +34,147 @@
         <button class="btn btn-light">contact us</button>
       </nav>
 
-      <div class="content">
-        <h1 class="content__heading">About</h1>
-        <div class="content__para-div">
-          <div class="content__dashed"></div>
-          <p class="content__para">We help companies build dynamic teams made up of top global talent.
+      <section class="about">
+        <h1 class="about__heading">About</h1>
+        <div class="about__para-div">
+          <div class="about__dashed"></div>
+          <p class="about__para">We help companies build dynamic teams made up of top global talent.
             Using our network of passionate professionals we drive innovation
             and deliver incredible outcomes. Talented, diverse teams shape the
             best products and experiences. We’ll bring those teams to you.</p>
         </div>
-      </div>
+      </section>
     </header>
 
 
-    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ END-OF-HEADER-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ END-OF-ABOUT-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
-    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ MAIN-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ DIRECTORS-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
-    <main class="main-section">
-      <div class="main-section__holder">
-        <div class="heading-wrapper">
-          <div class="heading-wrapper__dashed"></div>
-          <h2 class="heading-wrapper__heading">Build & manage distributed teams like no one else.</h2>
-        </div>
+    <section class="directors">
+      <div class="directors__container">
+        <h1 class="directors__heading">Meet the directors</h1>
+        <div class="directors__cards-holder">
 
-        <div class="features-list">
-          <div class="features-list__feature features-list__f1">
-            <img src="images/icon-person.svg" alt="person" class="icon-features icon-person">
-            <div class="features-list__content">
-              <h3 class="features-list__heading">Experienced Individuals</h3>
-              <p class="features-list__para">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+          <!-- FIRST-CARD -->
+          <div class="card card-1">
+            <div class="card__side card__side-front show-front">
+              <img src="../images/avatar-nikita.jpg" alt="Nikita Marks photo" class="card__picture">
+              <h3 class="card__name">Nikita Marks</h3>
+              <p class="card__designation">Founder & CEO</p>
             </div>
-          </div>
-          <div class="features-list__feature features-list__f2">
-            <img src="images/icon-cog.svg" alt="cog" class="icon-features icon-cog">
-            <div class="features-list__content">
-              <h3 class="features-list__heading">Easy to Implement</h3>
-              <p class="features-list__para">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+
+            <div class="card__side card__side-back hide-back">
+              <h3 class="card__heading">Nikita Marks</h3>
+              <p class="card__quote">“It always amazes me how much talent there is in every corner of the globe.”</p>
+              <div class="card__social-icons">
+                <a href="https://twitter.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkdin.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-linkdin"></i></a>
+              </div>
             </div>
+            <div class="card__btn-about btn-more"></div>
           </div>
-          <div class="features-list__feature features-list__f3">
-            <img src="images/icon-chart.svg" alt="chart" class="icon-features icon-chart">
-            <div class="features-list__content">
-              <h3 class="features-list__heading">Enhanced Productivity</h3>
-              <p class="features-list__para">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+
+          <!-- SECOND-CARD -->
+          <div class="card card-2">
+            <div class="card__side card__side-front show-front">
+              <img src="../images/avatar-christian.jpg" alt="Cristian Duncan photo" class="card__picture">
+              <h3 class="card__name">Cristian Duncan</h3>
+              <p class="card__designation">Co-founder & COO</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </main>
 
-    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ END-OF-MAIN-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-
-    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ STORIES-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-
-    <section class="stories">
-      <div class="wrapper">
-        <h2 class="wrapper__heading">Delivering real results for top <br> companies. Some of our <span class="s-stories">success stories.</span></h2>
-        <div class="wrapper__cards-holder">
-          <div class="wrapper__cards wrapper__card-1">
-            <p class="wrapper__quotes">“The team perfectly fit the specialized skill set required. They focused
-              on the most essential features helping us launch the platform eight months
-              faster than planned.”</p>
-            <h3 class="wrapper__names">Kady Baker</h3>
-            <p class="wrapper__designation">Product Manager at Bookmark</p>
-            <img src="images/avatar-kady.jpg" alt="photo" class="wrapper__user">
+            <div class="card__side card__side-back hide-back">
+              <h3 class="card__heading">Cristian Duncan</h3>
+              <p class="card__quote">“Distributed teams required unique processes. You need to approach work in a new way.”</p>
+              <div class="card__social-icons">
+                <a href="https://twitter.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkdin.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-linkdin"></i></a>
+              </div>
+            </div>
+            <div class="card__btn-about btn-more"></div>
           </div>
 
-          <div class="wrapper__cards wrapper__card-2">
-            <p class="wrapper__quotes">“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
-            <h3 class="wrapper__names">Aiysha Reese</h3>
-            <p class="wrapper__designation">Founder of Manage</p>
-            <img src="images/avatar-aiysha.jpg" alt="photo" class="wrapper__user">
+          <!-- THIRD-CARD -->
+          <div class="card card-3">
+            <div class="card__side card__side-front show-front">
+              <img src="../images/avatar-cruz.jpg" alt="Cruz Hamer photo" class="card__picture">
+              <h3 class="card__name">Cruz Hamer</h3>
+              <p class="card__designation">Co-founder & CTO</p>
+            </div>
+
+            <div class="card__side card__side-back hide-back">
+              <h3 class="card__heading">Cruz Hamer</h3>
+              <p class="card__quote">“Technology is at the forefront of enabling distributed teams. That's where we come in.”</p>
+              <div class="card__social-icons">
+                <a href="https://twitter.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkdin.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-linkdin"></i></a>
+              </div>
+            </div>
+            <div class="card__btn-about btn-more"></div>
           </div>
 
-          <div class="wrapper__cards wrapper__card-3">
-            <p class="wrapper__quotes"> “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the
-              first month.”</p>
-            <h3 class="wrapper__names">Arthur Clarke</h3>
-            <p class="wrapper__designation">Co-founder of MyPhysio</p>
-            <img src="images/avatar-arthur.jpg" alt="photo" class="wrapper__user">
+          <!-- FOURTH-CARD -->
+          <div class="card card-4">
+            <div class="card__side card__side-front show-front">
+              <img src="../images/avatar-drake.jpg" alt="Drake Heaton photo" class="card__picture">
+              <h3 class="card__name">Drake Heaton</h3>
+              <p class="card__designation">Business Development Lead</p>
+            </div>
+
+            <div class="card__side card__side-back hide-back">
+              <h3 class="card__heading">Drake Heaton</h3>
+              <p class="card__quote">“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”</p>
+              <div class="card__social-icons">
+                <a href="https://twitter.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkdin.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-linkdin"></i></a>
+              </div>
+            </div>
+            <div class="card__btn-about btn-more"></div>
+          </div>
+
+          <!-- FIFTH-CARD -->
+          <div class="card card-5">
+            <div class="card__side card__side-front show-front">
+              <img src="../images/avatar-griffin.jpg" alt="Griffin Wise photo" class="card__picture">
+              <h3 class="card__name">Griffin Wise</h3>
+              <p class="card__designation">Lead Marketing</p>
+            </div>
+
+            <div class="card__side card__side-back hide-back">
+              <h3 class="card__heading">Griffing Wise</h3>
+              <p class="card__quote">“Unique perspectives shape unique products, which is what you need to survive these days.”</p>
+              <div class="card__social-icons">
+                <a href="https://twitter.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkdin.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-linkdin"></i></a>
+              </div>
+            </div>
+            <div class="card__btn-about btn-more"></div>
+          </div>
+
+          <!-- SIXTH-CARD -->
+          <div class="card card-6">
+            <div class="card__side card__side-front show-front">
+              <img src="../images/avatar-aden.jpg" alt="Aden Allan photo" class="card__picture">
+              <h3 class="card__name">Aden Allan</h3>
+              <p class="card__designation">Head of Talent</p>
+            </div>
+
+            <div class="card__side card__side-back hide-back">
+              <h3 class="card__heading">Aden Allan</h3>
+              <p class="card__quote">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+              <div class="card__social-icons">
+                <a href="https://twitter.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkdin.com/Adarshcodes" target="_blank" class="icons"><i class="fab fa-linkdin"></i></a>
+              </div>
+            </div>
+            <div class="card__btn-about btn-more"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ END-OF-STORIES-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ END-OF-DIRECTORS-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ CTA-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
@@ -134,7 +192,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-container__logo-box">
-          <img src="images/logo.svg" alt="top bottom" class="footer-container__logo">
+          <img src="../images/logo.svg" alt="top bottom" class="footer-container__logo">
 
           <ul class="footer-list">
             <li class="footer-list__item">
@@ -171,5 +229,7 @@
 
 
 </body>
+<script src="../script/script-about.js"></script>
+<script src="../script/script.js"></script>
 
 </html>

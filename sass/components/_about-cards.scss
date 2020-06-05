@@ -1,0 +1,109 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 25.3rem;
+  margin-right: 3rem;
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  transition: all 0.5s;
+
+  &__picture {
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid $color-secondary-light-blue-2;
+    margin: 0 auto 1.9rem;
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.8s ease;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  &__side-front {
+    background-color: $color-secondary-dark-green-2;
+  }
+
+  &__side-back {
+    background-color: $color-secondary-dark-green-2;
+  }
+
+  .show-front {
+    transform: rotateY(0);
+  }
+
+  .hide-front {
+    transform: rotateY(-180deg);
+  }
+
+  .show-back {
+    transform: rotateY(0);
+  }
+
+  .hide-back {
+    transform: rotateY(180deg);
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: $color-secondary-light-blue;
+  }
+
+  &__designation {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: $color-primary-white;
+    font-style: italic;
+  }
+
+  &__btn-about {
+    display: block;
+    position: absolute;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-image: url("../images/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -2.4rem;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .btn-more {
+    background-color: $color-primary-coral;
+    transform: translateX(-50%);
+  }
+
+  .btn-back {
+    background-color: $color-secondary-light-blue;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  &__heading {}
+
+  &__quote {}
+
+  &__social-icons {}
+}
+
+.card-3,
+.card-6 {
+  margin-right: 0;
+}

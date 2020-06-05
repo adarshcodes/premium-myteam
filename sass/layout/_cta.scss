@@ -1,0 +1,22 @@
+//###################################################//
+// CTA-SECTION //
+// #################################################//
+
+.cta {
+  min-width: 144rem;
+  height: 20rem;
+  background-color: $color-primary-coral;
+  display: flex;
+
+  .cta-box {
+    display: flex;
+    margin: auto;
+
+    &__heading {
+      font-size: $heading-secondary;
+      line-height: $heading-secondary-line-height;
+      color: $color-secondary-dark-green-2;
+      margin-right: 26rem;
+    }
+  }
+}

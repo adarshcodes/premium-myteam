@@ -1,0 +1,71 @@
+//###################################################//
+// STORIES-SECTION //
+// #################################################//
+
+.stories {
+  min-width: 144rem;
+  height: 74.5rem;
+  background-color: $color-secondary-dark-green-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern-home-4-about-3.svg"), url("../images/bg-pattern-home-5.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+
+  .wrapper {
+    text-align: center;
+    padding: 21rem 16.5rem 22rem 16rem;
+
+    &__heading {
+      font-size: $heading-secondary;
+      line-height: $heading-secondary-line-height;
+    }
+
+    .s-stories {
+      color: $color-secondary-light-blue;
+    }
+
+    &__cards-holder {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 9.25rem;
+    }
+
+    &__quotes {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    &__names {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: $color-secondary-light-blue;
+      margin-top: 2.4rem;
+    }
+
+    &__designation {
+      font-size: 1.27rem;
+      line-height: 1.8rem;
+      color: $color-primary-white;
+      margin: 0.25rem 0 1rem 0.2rem;
+    }
+
+    &__user {
+      display: block;
+      width: 6.2rem;
+      height: 6.2rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid $color-secondary-light-blue-2;
+      margin: 2rem auto;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2) rotate(360deg);
+        box-shadow: 0 1rem 5rem rgba($color-secondary-light-blue-2, .4);
+      }
+    }
+  }
+}

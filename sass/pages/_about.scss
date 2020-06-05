@@ -1,0 +1,86 @@
+//###################################################//
+// ABOUT-HEADER //
+// #################################################//
+
+.header-about {
+  min-width: 144rem;
+  height: 51.7rem;
+  background-color: $color-primary-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about {
+  padding: 12rem 16.6rem 18.15rem;
+  display: flex;
+  background-image: url("../images/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 6.65rem right -10rem;
+
+  &__heading {
+    flex: 0 0 34.3%;
+    font-size: 6.4rem;
+    line-height: 10rem;
+    animation: heading-move 1s ease;
+  }
+
+  &__para-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-self: stretch;
+  }
+
+  &__dashed {
+    margin-bottom: 4rem;
+    width: 4.95rem;
+    height: 0.4rem;
+    background-color: $color-primary-coral;
+    animation: dashed-move 3s ease;
+    animation-fill-mode: backwards;
+  }
+
+  &__para {
+    margin-bottom: 0.5rem;
+    animation: para-move 1s ease;
+  }
+}
+//###################################################//
+// DIRECTORS-SECTION //
+// #################################################//
+
+.directors {
+  padding-top: 14rem;
+  width: 144rem;
+  height: 100.2rem;
+  background-color: $color-secondary-dark-green-1;
+  background-image: url('../images/bg-pattern-about-2-contact-1.svg'), url("../images/bg-pattern-home-4-about-3.svg");
+  background-repeat: no-repeat;
+  background-position: top left -10rem, bottom right;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    color: $color-primary-white;
+  }
+
+  &__cards-holder {
+    width: 111rem;
+    height: 72.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+}
