@@ -1,0 +1,34 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 16.5rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 3rem;
+  }
+
+  &__box {
+    width: 100%;
+    margin-top: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 16rem;
+  }
+
+  .logo-gadgets {
+    width: 11rem;
+  }
+}

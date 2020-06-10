@@ -39,6 +39,12 @@
 
   &__side-back {
     background-color: $color-secondary-dark-green-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
   }
 
   .show-front {
@@ -96,9 +102,18 @@
     transform: translateX(-50%) rotate(45deg);
   }
 
-  &__heading {}
+  &__heading {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: $color-secondary-light-blue;
+    margin-bottom: 2rem;
+  }
 
-  &__quote {}
+  &__quote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
 
   &__social-icons {}
 }

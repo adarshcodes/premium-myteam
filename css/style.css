@@ -191,7 +191,13 @@ body {
   .card__side-front {
     background-color: #012F34; }
   .card__side-back {
-    background-color: #012F34; }
+    background-color: #012F34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem; }
   .card .show-front {
     transform: rotateY(0); }
   .card .hide-front {
@@ -229,6 +235,15 @@ body {
   .card .btn-back {
     background-color: #79C8C7;
     transform: translateX(-50%) rotate(45deg); }
+  .card__heading {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #79C8C7;
+    margin-bottom: 2rem; }
+  .card__quote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem; }
 
 .card-3,
 .card-6 {
@@ -279,6 +294,30 @@ body {
       line-height: 4.8rem;
       color: #012F34;
       margin-right: 26rem; }
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 16.5rem; }
+  .clients__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .clients__heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 3rem; }
+  .clients__box {
+    width: 100%;
+    margin-top: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .clients__logo {
+    width: 16rem; }
+  .clients .logo-gadgets {
+    width: 11rem; }
 
 .footer {
   min-width: 144rem;
@@ -500,3 +539,11 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 1.5rem; }
+
+.clients {
+  width: 144rem;
+  height: 43.7rem;
+  background-color: #012F34;
+  background-image: url("../images/bg-pattern-about-4.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 0; }
