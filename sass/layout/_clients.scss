@@ -26,6 +26,12 @@
 
   &__logo {
     width: 16rem;
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(black, .3);
+      transform: rotate(5deg) scale(1.1);
+    }
   }
 
   .logo-gadgets {
