@@ -1,0 +1,121 @@
+//###################################################//
+// CONTACT-SECTION //
+// #################################################//
+
+.header-contact {
+  min-width: 144rem;
+  height: 79rem;
+  background-color: $color-primary-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('../images/bg-pattern-contact-2.svg'), url("../images/bg-pattern-about-2-contact-1.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0.2rem right -10rem, top 24.5rem left -10rem;
+}
+
+.contact {
+  width: 111.2rem;
+  height: 42.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+
+  .ask {
+    width: 50%;
+    height: 100%;
+
+    &__heading {
+      font-size: 6.4rem;
+      margin-top: 3.6rem;
+    }
+
+    &__heading-2 {
+      font-size: 3.2rem;
+      margin-top: 6.15rem;
+    }
+
+    &__list {
+      margin: 4.2rem 0 0 0.7rem;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__ico {
+      margin-right: 2.3rem;
+    }
+  }
+  // FORM STYLING
+
+  &__form-section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .form {
+    &__group:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &__input {
+      font-size: 1.5rem;
+      padding: 1rem 1.5rem;
+      border: 2px;
+      background-color: rgba($color-primary-white, .1);
+      border: none;
+      font-family: inherit;
+      color: inherit;
+      border-bottom: 1px solid $color-secondary-light-blue;
+      width: 90%;
+      display: block;
+      transition: all 0.3s;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        border-bottom: 3px solid $color-primary-greenish;
+      }
+
+      &:focus:invalid {
+        border-bottom: 3px solid $color-secondary-dark-orange;
+      }
+
+      &::-webkit-input-placeholder {
+        color: $color-grey-dark;
+      }
+
+      &::placeholder {
+        color: $color-secondary-light-blue;
+      }
+    }
+
+    &__label {
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-left: 1.5rem;
+      display: block;
+      transition: all 0.3s;
+    }
+
+    .form-input:placeholder-shown + .form-label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+    }
+  }
+
+  .submit-btn {
+    margin-right: 2rem;
+  }
+}

@@ -10,6 +10,7 @@
   padding: 1.1rem 3.05rem;
   transition: all 0.2s;
   cursor: pointer;
+  text-decoration: none;
   animation: button-move 1s linear;
 
   &:focus {
@@ -29,6 +30,8 @@
     background-color: $color-primary-white;
     color: $color-secondary-dark-green-3;
   }
+
+
 }
 
 .btn-dark {

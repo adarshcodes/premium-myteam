@@ -33,7 +33,7 @@
     backface-visibility: hidden;
 
     &:hover {
-      box-shadow: 1px 2px 81px -15px rgba(121,200,199, .5);
+      box-shadow: 1px 2px 51px -5px rgba(121,200,199, .5);
       cursor: pointer;
     }
   }
@@ -123,6 +123,10 @@
   &__social-icons a {
     margin-right: 1rem;
     color: $color-primary-white;
+
+    :hover {
+    transform: scale(1.1);
+    }
   }
 }
 
