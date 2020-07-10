@@ -509,7 +509,7 @@ body {
     flex: 0 0 34.3%;
     font-size: 6.4rem;
     line-height: 10rem;
-    animation: heading-move 1s ease; }
+    animation: none; }
   .about__para-div {
     display: flex;
     flex-direction: column;
@@ -521,11 +521,16 @@ body {
     width: 4.95rem;
     height: 0.4rem;
     background-color: #F67E7E;
-    animation: dashed-move 3s ease;
-    animation-fill-mode: backwards; }
+    animation: none; }
   .about__para {
     margin-bottom: 0.5rem;
-    animation: para-move 1s ease; }
+    animation: none; }
+
+.about-nav-btn {
+  animation: none; }
+
+#about-nav-logo, #about-nav-list, #about-nav-btn {
+  animation: none; }
 
 .directors {
   padding-top: 14rem;
@@ -572,6 +577,9 @@ body {
   background-image: url("../images/bg-pattern-contact-2.svg"), url("../images/bg-pattern-about-2-contact-1.svg");
   background-repeat: no-repeat;
   background-position: bottom 0.2rem right -10rem, top 24.5rem left -10rem; }
+
+#contact-nav-logo, #contact-nav-list, #contact-nav-btn {
+  animation: none; }
 
 .contact {
   width: 111.2rem;
@@ -638,4 +646,7 @@ body {
     visibility: hidden;
     transform: translateY(-4rem); }
   .contact .submit-btn {
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    animation: none; }
+  .contact .clear-btn {
+    animation: none; }

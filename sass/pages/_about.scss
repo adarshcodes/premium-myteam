@@ -23,7 +23,7 @@
     flex: 0 0 34.3%;
     font-size: 6.4rem;
     line-height: 10rem;
-    animation: heading-move 1s ease;
+    animation: none;
   }
 
   &__para-div {
@@ -39,14 +39,21 @@
     width: 4.95rem;
     height: 0.4rem;
     background-color: $color-primary-coral;
-    animation: dashed-move 3s ease;
-    animation-fill-mode: backwards;
+    animation: none;
   }
 
   &__para {
     margin-bottom: 0.5rem;
-    animation: para-move 1s ease;
+    animation: none;
   }
+}
+
+.about-nav-btn {
+  animation: none;
+}
+
+#about-nav-logo, #about-nav-list, #about-nav-btn {
+  animation: none;
 }
 //###################################################//
 // DIRECTORS-SECTION //

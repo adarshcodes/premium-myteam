@@ -15,6 +15,10 @@
   background-position: bottom 0.2rem right -10rem, top 24.5rem left -10rem;
 }
 
+#contact-nav-logo, #contact-nav-list, #contact-nav-btn {
+  animation: none;
+}
+
 .contact {
   width: 111.2rem;
   height: 42.8rem;
@@ -117,5 +121,10 @@
 
   .submit-btn {
     margin-right: 2rem;
+    animation: none;
+  }
+
+  .clear-btn {
+    animation: none;
   }
 }
