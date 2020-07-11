@@ -3,20 +3,34 @@
 // #################################################//
 
 .cta {
-  min-width: 144rem;
-  height: 20rem;
+  // min-width: 144rem;
+  // height: 20rem;
   background-color: $color-primary-coral;
   display: flex;
 
   .cta-box {
     display: flex;
     margin: auto;
+    padding: 7.6rem 0 7.47rem 0.4rem;
+
+    @media screen and (max-width: 1050px){
+      padding: 5rem 0 5rem 0.4rem; 
+    }
 
     &__heading {
       font-size: $heading-secondary;
       line-height: $heading-secondary-line-height;
       color: $color-secondary-dark-green-2;
       margin-right: 26rem;
+
+      @media screen and (max-width: 1050px){
+        margin-right: 10rem;
+        font-size: 4.4rem;
+      }
     }
+  }
+
+  .cta-btn {
+    padding: 0.8rem 3.1rem;
   }
 }

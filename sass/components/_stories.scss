@@ -3,8 +3,8 @@
 // #################################################//
 
 .stories {
-  min-width: 144rem;
-  height: 74.5rem;
+  // min-width: 144rem;
+  // height: 74.5rem;
   background-color: $color-secondary-dark-green-1;
   display: flex;
   justify-content: center;
@@ -15,11 +15,31 @@
 
   .wrapper {
     text-align: center;
-    padding: 21rem 16.5rem 22rem 16rem;
+    padding: 14rem 16rem 14.4rem;
+    @media screen and (max-width: 1130px) {
+      padding: 12rem 10rem 0 10rem;
+    }
 
     &__heading {
       font-size: $heading-secondary;
       line-height: $heading-secondary-line-height;
+      @media screen and (max-width: 1050px) {
+        font-size: 4.4rem;
+      }
+    }
+
+    &__cards {
+      background-image: url("../images/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: top;
+
+      &__:not(:last-child) {
+        margin-right: 5rem;
+      }
+
+      @media screen and (max-width: 1050px) {
+        margin-bottom: 2rem;
+      }
     }
 
     .s-stories {
@@ -30,6 +50,11 @@
       display: flex;
       justify-content: space-between;
       padding-top: 9.25rem;
+      @media screen and (max-width: 1050px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 9rem 10rem;
+      }
     }
 
     &__quotes {

@@ -3,8 +3,8 @@
 // #################################################//
 
 .header {
-  min-width: 144rem;
-  height: 70rem;
+  // min-width: 144rem;
+  // height: 70rem;
   background-color: $color-primary-green;
   display: flex;
   flex-direction: column;
@@ -20,11 +20,25 @@
     background-repeat: no-repeat;
     background-position: top 12.9rem left -9.9rem, bottom right 16.45rem;
 
+    @media screen and (max-width: 1130px) {
+      padding: 12.9rem 10rem 25rem;
+    }
+
+    @media screen and (max-width: 1050px){
+      background-position: top 5rem left -8rem, bottom right 8rem;
+      background-size: 15rem, 27rem;
+      padding: 12.9rem 8rem 18rem;
+    }
+
     &__heading {
       flex: 0 0 60%;
       font-size: $heading-primary-large;
       line-height: $heading-primary-line-height;
       animation: heading-move 1s ease;
+
+      @media screen and (max-width: 1050px) {
+        font-size: 8rem;
+      }
     }
 
     &__heading-coral {
@@ -37,6 +51,10 @@
       justify-content: space-between;
       flex-grow: 1;
       align-self: stretch;
+
+      @media screen and (max-width: 1050px){
+        justify-content: center;
+      }
     }
 
     &__dashed {
@@ -45,11 +63,20 @@
       background-color: $color-secondary-light-blue;
       animation: dashed-move 3s ease;
       animation-fill-mode: backwards;
+
+      @media screen and (max-width: 1050px){
+        margin-bottom: 5rem;
+      }
     }
 
     &__para {
+      font-size: 1.8rem;
       margin-bottom: 0.5rem;
       animation: para-move 1s ease;
+
+      @media screen and (max-width: 1050px) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -58,8 +85,8 @@
 // #################################################//
 
 .main-section {
-  min-width: 144rem;
-  height: 68.4rem;
+  // min-width: 144rem;
+  // height: 68.4rem;
   background-color: $color-secondary-dark-green-2;
   display: flex;
   justify-content: center;
@@ -68,10 +95,27 @@
   background-repeat: no-repeat;
   background-position: bottom right -10rem;
 
+  @media screen and (max-width: 1050px){
+    background-position: bottom right -7.9rem;
+    background-size: 16rem;
+  }
+
   &__holder {
     display: flex;
-    width: 111rem;
-    height: 44.4rem;
+    padding: 12rem 16.5rem 14rem;
+    // width: 111rem;
+    // height: 44.4rem;
+    @media screen and (max-width: 1130px) {
+      display: flex;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 1050px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .heading-wrapper {
@@ -98,6 +142,10 @@
     justify-content: flex-start;
     margin-left: 12.5rem;
     font-family: inherit;
+
+    @media screen and (max-width: 1050px){
+      margin-left: 0;
+    }
 
     &__feature {
       display: flex;
