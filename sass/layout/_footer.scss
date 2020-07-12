@@ -23,6 +23,11 @@
     padding: 4.8rem 8rem 4.5rem 7.95rem;
   }
 
+  @media screen and (max-width: 770px) {
+    flex-wrap: wrap;
+    padding: 4.8rem 6rem 4.5rem 3.95rem;
+  }
+
   &__logo-box {
     display: flex;
     flex-direction: column;
@@ -32,11 +37,20 @@
   &__logo {
     cursor: pointer;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 770px) {
+      width: 13.5rem;
+      height: 3.5rem;
+    }
   }
 
   .footer-list {
     list-style: none;
     display: flex;
+
+    @media screen and (max-width: 770px) {
+      font-size: 1.5rem;
+    }
 
     &__item:not(:last-child) {
       margin-right: 4rem;
@@ -67,6 +81,10 @@
     @media screen and (max-width: 1050px){
       font-size: 1.4rem;
     }
+
+    @media screen and (max-width: 770px) {
+      margin-right: 4rem;
+    }
   }
 
   &__social-box {
@@ -74,6 +92,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media screen and (max-width: 770px) {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5rem;
+    }
   }
 
   &__socialicons {

@@ -26,6 +26,10 @@
       @media screen and (max-width: 1050px) {
         font-size: 4.4rem;
       }
+
+      @media screen and (max-width: 770px) {
+        font-size: 3.2rem;
+      }
     }
 
     &__cards {
@@ -54,6 +58,10 @@
         display: flex;
         flex-wrap: wrap;
         padding: 9rem 10rem;
+      }
+
+      @media screen and (max-width: 770px) {
+        padding: 9rem 0;
       }
     }
 

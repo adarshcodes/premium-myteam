@@ -10,9 +10,13 @@
   height: 4.8rem;
   margin-top: 7.3rem;
   padding: 0 9.1rem;
-
-  @media screen and (max-width: 1130px){
+  
+  @media screen and (max-width: 1130px) {
     padding: 0 5rem;
+  }
+
+  @media screen and (max-width: 770px) {
+    padding: 0;
   }
 
   .logo {
@@ -20,6 +24,11 @@
     height: 4rem;
     animation: logo-move 1s linear;
     cursor: pointer;
+
+    @media screen and (max-width: 770px) {
+      width: 13.5rem;
+      height: 3.2rem;
+    }
   }
 
   .nav-list {
@@ -29,6 +38,12 @@
     margin-left: 8rem;
     animation: lists-move 1.5s ease-out 1s;
     animation-fill-mode: backwards;
+
+    @media screen and (max-width: 770px) {
+      font-size: 1.6rem;
+      margin-left: 7rem;
+      margin-bottom: 1rem;
+    }
 
     &__item:not(:last-child) {
       margin-right: 4.1rem;
@@ -52,9 +67,14 @@
   }
 
   .nav-btn {
-    @media screen and (max-width: 1050px){
-      padding: .5rem 2rem;
+
+    @media screen and (max-width: 1050px) {
+      padding: 0.5rem 2rem;
       font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 770px) {
+      padding: 0.5rem 1.8rem;
     }
   }
 }

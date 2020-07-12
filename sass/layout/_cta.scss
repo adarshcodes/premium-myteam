@@ -7,6 +7,10 @@
   // height: 20rem;
   background-color: $color-primary-coral;
   display: flex;
+  background-image: url('../images/bg-pattern-home-6-about-5.svg');
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -2rem;
+  background-size: 20rem;
 
   .cta-box {
     display: flex;
@@ -14,7 +18,7 @@
     padding: 7.6rem 0 7.47rem 0.4rem;
 
     @media screen and (max-width: 1050px){
-      padding: 5rem 0 5rem 0.4rem; 
+      padding: 8rem 0 8rem 0.4rem;
     }
 
     &__heading {
@@ -27,10 +31,18 @@
         margin-right: 10rem;
         font-size: 4.4rem;
       }
+
+      @media screen and (max-width: 770px) {
+        font-size: 3.2rem;
+      }
     }
   }
 
   .cta-btn {
     padding: 0.8rem 3.1rem;
+
+    @media screen and (max-width: 770px) {
+      padding: 0.8rem 2.1rem;
+    }
   }
 }

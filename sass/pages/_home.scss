@@ -24,10 +24,20 @@
       padding: 12.9rem 10rem 25rem;
     }
 
-    @media screen and (max-width: 1050px){
+    @media screen and (max-width: 1050px) {
       background-position: top 5rem left -8rem, bottom right 8rem;
       background-size: 15rem, 27rem;
       padding: 12.9rem 8rem 18rem;
+    }
+
+    @media screen and (max-width: 770px) {
+      display: flex;
+      flex-direction: column;
+
+      background-image: url("../images/bg-pattern-home-2.svg");
+      background-repeat: no-repeat;
+      background-size: 35.8rem;
+      background-position: bottom right 16.45rem;
     }
 
     &__heading {
@@ -38,6 +48,12 @@
 
       @media screen and (max-width: 1050px) {
         font-size: 8rem;
+      }
+
+      @media screen and (max-width: 770px) {
+        font-size: 6.4rem;
+        text-align: center;
+        line-height: 5.6rem;
       }
     }
 
@@ -55,6 +71,11 @@
       @media screen and (max-width: 1050px){
         justify-content: center;
       }
+
+      @media screen and (max-width: 770px){
+        text-align: center;
+        padding: 0 4rem;
+      }
     }
 
     &__dashed {
@@ -67,6 +88,10 @@
       @media screen and (max-width: 1050px){
         margin-bottom: 5rem;
       }
+
+      @media screen and (max-width: 770px) {
+        display: none;
+      }
     }
 
     &__para {
@@ -76,6 +101,11 @@
 
       @media screen and (max-width: 1050px) {
         font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 770px) {
+        font-size: 1.5rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -95,9 +125,14 @@
   background-repeat: no-repeat;
   background-position: bottom right -10rem;
 
-  @media screen and (max-width: 1050px){
+  @media screen and (max-width: 1050px) {
     background-position: bottom right -7.9rem;
     background-size: 16rem;
+  }
+
+  @media screen and (max-width: 770px) {
+    background-position: top right -10rem;
+    background-size: 20rem;
   }
 
   &__holder {
@@ -110,11 +145,15 @@
       align-items: center;
     }
 
-    @media screen and (max-width: 1050px){
+    @media screen and (max-width: 1050px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    @media screen and (max-width: 770px) {
+      padding: 12rem 10.5rem 10rem;
     }
   }
 
@@ -133,6 +172,11 @@
       color: inherit;
       line-height: $heading-secondary-line-height;
       margin-top: 5.5rem;
+
+      @media screen and (max-width: 770px) {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+      }
     }
   }
 
