@@ -21,6 +21,18 @@
       padding: 8rem 0 8rem 0.4rem;
     }
 
+    @media screen and (max-width: 770px){
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 560px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     &__heading {
       font-size: $heading-secondary;
       line-height: $heading-secondary-line-height;
@@ -34,6 +46,14 @@
 
       @media screen and (max-width: 770px) {
         font-size: 3.2rem;
+        margin-right: 2rem;
+      }
+
+      @media screen and (max-width: 560px) {
+        font-size: 3.2rem;
+        margin-bottom: 4rem;
+        margin-right: 0;
+        text-align: center;
       }
     }
   }

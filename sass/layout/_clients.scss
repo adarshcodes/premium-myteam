@@ -2,6 +2,19 @@
   display: flex;
   flex-direction: column;
   padding: 14rem 16.5rem;
+  @media screen and (max-width: 1204px) {
+    padding: 14rem 8.5rem;
+  }
+  @media screen and (max-width: 1050px) {
+    padding: 14rem 5rem;
+  }
+  @media screen and (max-width: 560px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 10rem 1.5rem;
+  }
 
   &__content {
     display: flex;
@@ -14,19 +27,37 @@
     font-size: 4.8rem;
     line-height: 4.8rem;
     margin-bottom: 3rem;
+    @media screen and (max-width: 770px) {
+      font-size: 3.2rem;
+    }
   }
 
   &__box {
     width: 100%;
-    margin-top: 2.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1050px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__logo {
+    margin-top: 2.8rem;
     width: 16rem;
-    transition: all .3s;
+    transition: all 0.3s;
+    @media screen and (max-width: 1050px) {
+      margin-right: 3rem;
+    }
+    @media screen and (max-width: 770px) {
+      width: 14rem;
+    }
+    @media screen and (max-width: 560px) {
+      margin-right: 2rem;
+      margin-left: 2rem;
+      margin-top: 5rem;
+    }
 
     &:hover {
       box-shadow: 0 1rem 2rem rgba(black, .3);

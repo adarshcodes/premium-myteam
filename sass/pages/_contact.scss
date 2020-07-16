@@ -3,8 +3,7 @@
 // #################################################//
 
 .header-contact {
-  min-width: 144rem;
-  height: 79rem;
+  padding-bottom: 12rem;
   background-color: $color-primary-green;
   display: flex;
   flex-direction: column;
@@ -15,7 +14,9 @@
   background-position: bottom 0.2rem right -10rem, top 24.5rem left -10rem;
 }
 
-#contact-nav-logo, #contact-nav-list, #contact-nav-btn {
+#contact-nav-btn,
+#contact-nav-list,
+#contact-nav-logo {
   animation: none;
 }
 
@@ -61,7 +62,6 @@
     }
   }
   // FORM STYLING
-
   &__form-section {
     width: 50%;
     height: 100%;

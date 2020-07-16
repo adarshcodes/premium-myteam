@@ -10,16 +10,27 @@
   height: 4.8rem;
   margin-top: 7.3rem;
   padding: 0 9.1rem;
-  
+
+  .hamburger {
+    display: none;
+    transition: all .5s;
+
+    @media screen and (max-width: 560px) {
+      display: block;
+    }
+  }
+
   @media screen and (max-width: 1130px) {
     padding: 0 5rem;
   }
 
   @media screen and (max-width: 770px) {
     padding: 0;
+    margin-top: 4rem;
   }
 
   .logo {
+    margin-top: 1rem;
     width: 15.995rem;
     height: 4rem;
     animation: logo-move 1s linear;
@@ -45,6 +56,10 @@
       margin-bottom: 1rem;
     }
 
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
+
     &__item:not(:last-child) {
       margin-right: 4.1rem;
     }
@@ -63,18 +78,6 @@
       text-decoration: none;
       color: inherit;
       background-color: $color-primary-green;
-    }
-  }
-
-  .nav-btn {
-
-    @media screen and (max-width: 1050px) {
-      padding: 0.5rem 2rem;
-      font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: 770px) {
-      padding: 0.5rem 1.8rem;
     }
   }
 }

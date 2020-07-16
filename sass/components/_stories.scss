@@ -20,6 +20,10 @@
       padding: 12rem 10rem 0 10rem;
     }
 
+    @media screen and (max-width: 560px) {
+      padding: 12rem 1.5rem 0 1.5rem;
+    }
+
     &__heading {
       font-size: $heading-secondary;
       line-height: $heading-secondary-line-height;
@@ -44,6 +48,10 @@
       @media screen and (max-width: 1050px) {
         margin-bottom: 2rem;
       }
+
+      @media screen and (max-width: 560px) {
+        margin-bottom: 3rem;
+      }
     }
 
     .s-stories {
@@ -62,6 +70,11 @@
 
       @media screen and (max-width: 770px) {
         padding: 9rem 0;
+      }
+
+      @media screen and (max-width: 560px) {
+        margin-right: 0;
+        padding: 9rem 0 7rem;
       }
     }
 

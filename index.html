@@ -18,6 +18,7 @@
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~ HEADER-SECTION ~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
     <header class="header">
+
       <nav class="user-nav">
         <a href="index.html"><img src="images/logo.svg" alt="top logo" class="logo"></a>
 
@@ -31,7 +32,26 @@
         </ul>
 
         <a href="pages/contact.html" class="btn btn-light nav-btn">Contact us</a>
+        <img src="images/icon-hamburger.svg" alt="hamburger" class="hamburger">
       </nav>
+
+      <div class="ham-menu">
+        <div class="ham-menu__close">
+          <img src="images/icon-close.svg" alt="close" class="close">
+        </div>
+        <div class="ham-menu__list">
+          <ul class="ham-list">
+            <li class="ham-list__item">
+              <a href="index.html" class="ham-list__link">home</a>
+            </li>
+            <li class="ham-list__item">
+              <a href="pages/about.html" class="ham-list__link">about</a>
+            </li>
+          </ul>
+
+          <a href="pages/contact.html" class="btn btn-light ham-btn">Contact us</a>
+        </div>
+      </div>
 
       <div class="content">
         <h1 class="content__heading">Find the <br> best <span class="content__heading-coral">talent</span></h1>
@@ -171,7 +191,7 @@
 
   </div>
 
-
+<script src="script/script.js" charset="utf-8"></script>
 </body>
 
 </html>
