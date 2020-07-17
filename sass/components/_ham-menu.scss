@@ -2,12 +2,14 @@
   z-index: 1;
   position: fixed;
   right: -50rem;
-  width: 60%;
+  width: 35rem;
   height: 100vh;
   background-color: $color-secondary-dark-blue;
   background-image: url('../images/bg-pattern-about-1-mobile-nav-1.svg');
   background-repeat: no-repeat;
   background-position: bottom 0 right -10rem;
+  transition: transform .4s cubic-bezier(1, 0, 0, 1);
+  border-left: 2px dotted $color-primary-coral;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +19,14 @@
   &__close {
     margin: 5rem 0 2.5rem 70%;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 70%;
   }
 }
 
@@ -54,4 +64,10 @@
     margin-top: 2rem;
     padding: .7rem 3.5rem;
   }
+}
+
+// style-class
+
+.ham-open {
+  transform: translateX(-50rem);
 }

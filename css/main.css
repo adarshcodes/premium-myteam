@@ -678,12 +678,17 @@ body {
   z-index: 1;
   position: fixed;
   right: -50rem;
-  width: 60%;
+  width: 35rem;
   height: 100vh;
   background-color: #2C6269;
   background-image: url("../images/bg-pattern-about-1-mobile-nav-1.svg");
   background-repeat: no-repeat;
   background-position: bottom 0 right -10rem;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1), -webkit-transform 0.4s cubic-bezier(1, 0, 0, 1);
+  border-left: 2px dotted #F67E7E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,6 +707,18 @@ body {
 .ham-menu__close {
   margin: 5rem 0 2.5rem 70%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+  .ham-menu {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ham-menu {
+    width: 70%;
+  }
 }
 
 .ham-list {
@@ -748,6 +765,11 @@ body {
     margin-top: 2rem;
     padding: .7rem 3.5rem;
   }
+}
+
+.ham-open {
+  -webkit-transform: translateX(-50rem);
+          transform: translateX(-50rem);
 }
 
 .user-nav {

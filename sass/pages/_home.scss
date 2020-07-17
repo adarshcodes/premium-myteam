@@ -81,11 +81,11 @@
       flex-grow: 1;
       align-self: stretch;
 
-      @media screen and (max-width: 1050px){
+      @media screen and (max-width: 1050px) {
         justify-content: center;
       }
 
-      @media screen and (max-width: 770px){
+      @media screen and (max-width: 770px) {
         text-align: center;
         padding: 0 4rem;
       }
@@ -102,7 +102,7 @@
       animation: dashed-move 3s ease;
       animation-fill-mode: backwards;
 
-      @media screen and (max-width: 1050px){
+      @media screen and (max-width: 1050px) {
         margin-bottom: 5rem;
       }
 
@@ -127,6 +127,7 @@
     }
   }
 }
+
 //###################################################//
 // MAIN-SECTION //
 // #################################################//
@@ -155,6 +156,7 @@
   &__holder {
     display: flex;
     padding: 12rem 16.5rem 14rem;
+
     // width: 111rem;
     // height: 44.4rem;
     @media screen and (max-width: 1130px) {
@@ -213,7 +215,7 @@
     margin-left: 12.5rem;
     font-family: inherit;
 
-    @media screen and (max-width: 1050px){
+    @media screen and (max-width: 1050px) {
       margin-left: 0;
     }
 

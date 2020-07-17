@@ -118,6 +118,7 @@
       margin-right: 2.3rem;
     }
   }
+
   // FORM STYLING
   &__form-section {
     width: 50%;
@@ -177,7 +178,7 @@
       transition: all 0.3s;
     }
 
-    .form-input:placeholder-shown + .form-label {
+    .form-input:placeholder-shown+.form-label {
       opacity: 0;
       visibility: hidden;
       transform: translateY(-4rem);
@@ -195,9 +196,11 @@
     padding: 1.1rem 3.5rem;
     font-size: 1.7rem;
   }
+
   @media screen and (max-width: 770px) {
     padding: 1rem 3rem;
   }
+
   @media screen and (max-width: 560px) {
     display: none;
   }
