@@ -1,7 +1,57 @@
 .ham-menu {
+  z-index: 1;
   position: fixed;
   right: -50rem;
-  width: 30rem;
+  width: 60%;
   height: 100vh;
   background-color: $color-secondary-dark-blue;
+  background-image: url('../images/bg-pattern-about-1-mobile-nav-1.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__close {
+    margin: 5rem 0 2.5rem 70%;
+    cursor: pointer;
+  }
+}
+
+.ham-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 4.1rem;
+  }
+
+  &__item {
+    transition: transform 0.2s;
+    margin-bottom: 2rem;
+
+    &:hover {
+      color: $color-primary-coral;
+      transform: rotate(-5deg) scale(1.15);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    background-color: $color-secondary-dark-blue;
+  }
+}
+
+.ham-btn {
+  @media screen and (max-width: 560px) {
+    display: inline-block;
+    animation: none;
+    margin-top: 2rem;
+    padding: .7rem 3.5rem;
+  }
 }
