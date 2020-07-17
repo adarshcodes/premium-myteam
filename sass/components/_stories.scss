@@ -16,6 +16,7 @@
   .wrapper {
     text-align: center;
     padding: 14rem 16rem 14.4rem;
+    
     @media screen and (max-width: 1130px) {
       padding: 12rem 10rem 0 10rem;
     }
@@ -41,8 +42,8 @@
       background-repeat: no-repeat;
       background-position: top;
 
-      &__:not(:last-child) {
-        margin-right: 5rem;
+      &:not(:lastChild) {
+       margin-right: 4rem;
       }
 
       @media screen and (max-width: 1050px) {
