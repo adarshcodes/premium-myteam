@@ -12,6 +12,12 @@
   background-image: url('../images/bg-pattern-contact-2.svg'), url("../images/bg-pattern-about-2-contact-1.svg");
   background-repeat: no-repeat;
   background-position: bottom 0.2rem right -10rem, top 24.5rem left -10rem;
+
+  @media screen and (max-width: 560px) {
+    background-image: url('../images/bg-pattern-contact-2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 0.2rem right -10rem;
+  }
 }
 
 #contact-nav-btn,
@@ -21,25 +27,71 @@
 }
 
 .contact {
-  width: 111.2rem;
-  height: 42.8rem;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 12rem;
+  align-items: flex-start;
+  padding: 12rem 16rem 0;
+
+  @media screen and (max-width: 1130px) {
+    padding: 12rem 10rem 0;
+  }
+
+  @media screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 770px) {
+    padding: 12rem 6rem 0;
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 7rem 1rem 5rem;
+  }
 
   .ask {
     width: 50%;
     height: 100%;
 
+    @media screen and (max-width: 850px) {
+      width: 100%;
+    }
+
     &__heading {
       font-size: 6.4rem;
       margin-top: 3.6rem;
+
+      @media screen and (max-width: 850px) {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 560px) {
+        font-size: 4rem;
+      }
+    }
+
+    &__about {
+
+      @media screen and (max-width: 850px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &__heading-2 {
       font-size: 3.2rem;
       margin-top: 6.15rem;
+      color: $color-primary-coral;
+
+      @media screen and (max-width: 560px) {
+        margin-top: 2rem;
+      }
     }
 
     &__list {
@@ -50,10 +102,15 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      text-align: left;
       list-style: none;
 
       &:not(:last-child) {
         margin-bottom: 1rem;
+
+        @media screen and (max-width: 850px) {
+          margin-bottom: 3rem;
+        }
       }
     }
 
@@ -65,6 +122,13 @@
   &__form-section {
     width: 50%;
     height: 100%;
+
+    @media screen and (max-width: 850px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem;
+    }
   }
 
   .form {
@@ -84,6 +148,7 @@
       width: 90%;
       display: block;
       transition: all 0.3s;
+      margin: 0 auto;
 
       &:focus {
         outline: none;
@@ -120,11 +185,26 @@
   }
 
   .submit-btn {
-    margin-right: 2rem;
+    margin-left: 2.5rem;
     animation: none;
   }
+}
 
-  .clear-btn {
-    animation: none;
+.btn-contact {
+  @media screen and (max-width: 1050px) {
+    padding: 1.1rem 3.5rem;
+    font-size: 1.7rem;
+  }
+  @media screen and (max-width: 770px) {
+    padding: 1rem 3rem;
+  }
+  @media screen and (max-width: 560px) {
+    display: none;
+  }
+}
+
+.submit-btn {
+  @media screen and (max-width: 560px) {
+    display: inline-block;
   }
 }

@@ -70,7 +70,8 @@ html {
   font-size: 62.5%; }
 
 body .container {
-  width: 94.7%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto; }
 
 body {
@@ -957,6 +958,11 @@ body {
   background-image: url("../images/bg-pattern-contact-2.svg"), url("../images/bg-pattern-about-2-contact-1.svg");
   background-repeat: no-repeat;
   background-position: bottom 0.2rem right -10rem, top 24.5rem left -10rem; }
+  @media screen and (max-width: 560px) {
+    .header-contact {
+      background-image: url("../images/bg-pattern-contact-2.svg");
+      background-repeat: no-repeat;
+      background-position: bottom 0.2rem right -10rem; } }
 
 #contact-nav-btn,
 #contact-nav-list,
@@ -964,35 +970,79 @@ body {
   animation: none; }
 
 .contact {
-  width: 111.2rem;
-  height: 42.8rem;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 12rem; }
+  align-items: flex-start;
+  padding: 12rem 16rem 0; }
+  @media screen and (max-width: 1130px) {
+    .contact {
+      padding: 12rem 10rem 0; } }
+  @media screen and (max-width: 850px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 770px) {
+    .contact {
+      padding: 12rem 6rem 0; } }
+  @media screen and (max-width: 560px) {
+    .contact {
+      padding: 7rem 1rem 5rem; } }
   .contact .ask {
     width: 50%;
     height: 100%; }
+    @media screen and (max-width: 850px) {
+      .contact .ask {
+        width: 100%; } }
     .contact .ask__heading {
       font-size: 6.4rem;
       margin-top: 3.6rem; }
+      @media screen and (max-width: 850px) {
+        .contact .ask__heading {
+          text-align: center; } }
+      @media screen and (max-width: 560px) {
+        .contact .ask__heading {
+          font-size: 4rem; } }
+    @media screen and (max-width: 850px) {
+      .contact .ask__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .contact .ask__heading-2 {
       font-size: 3.2rem;
-      margin-top: 6.15rem; }
+      margin-top: 6.15rem;
+      color: #F67E7E; }
+      @media screen and (max-width: 560px) {
+        .contact .ask__heading-2 {
+          margin-top: 2rem; } }
     .contact .ask__list {
       margin: 4.2rem 0 0 0.7rem; }
     .contact .ask__item {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      text-align: left;
       list-style: none; }
       .contact .ask__item:not(:last-child) {
         margin-bottom: 1rem; }
+        @media screen and (max-width: 850px) {
+          .contact .ask__item:not(:last-child) {
+            margin-bottom: 3rem; } }
     .contact .ask__ico {
       margin-right: 2.3rem; }
   .contact__form-section {
     width: 50%;
     height: 100%; }
+    @media screen and (max-width: 850px) {
+      .contact__form-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem; } }
   .contact .form__group:not(:last-child) {
     margin-bottom: 1.5rem; }
   .contact .form__input {
@@ -1006,7 +1056,8 @@ body {
     border-bottom: 1px solid #79C8C7;
     width: 90%;
     display: block;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    margin: 0 auto; }
     .contact .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -1028,7 +1079,22 @@ body {
     visibility: hidden;
     transform: translateY(-4rem); }
   .contact .submit-btn {
-    margin-right: 2rem;
+    margin-left: 2.5rem;
     animation: none; }
-  .contact .clear-btn {
-    animation: none; }
+
+@media screen and (max-width: 1050px) {
+  .btn-contact {
+    padding: 1.1rem 3.5rem;
+    font-size: 1.7rem; } }
+
+@media screen and (max-width: 770px) {
+  .btn-contact {
+    padding: 1rem 3rem; } }
+
+@media screen and (max-width: 560px) {
+  .btn-contact {
+    display: none; } }
+
+@media screen and (max-width: 560px) {
+  .submit-btn {
+    display: inline-block; } }
