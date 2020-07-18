@@ -11,7 +11,7 @@
   transition: all 0.2s;
   cursor: pointer;
   text-decoration: none;
-  animation: button-move 1s linear;
+  animation: button-move .5s linear;
 
   &:focus {
     outline: none;

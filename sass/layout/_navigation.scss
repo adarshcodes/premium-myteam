@@ -33,7 +33,7 @@
     margin-top: 1rem;
     width: 15.995rem;
     height: 4rem;
-    animation: logo-move 1s linear;
+    animation: button-move .5s linear;
     cursor: pointer;
 
     @media screen and (max-width: 770px) {
@@ -47,8 +47,8 @@
     display: flex;
     margin-right: auto;
     margin-left: 8rem;
-    animation: lists-move 1.5s ease-out 1s;
-    animation-fill-mode: backwards;
+    animation: button-move .5s linear;
+    // animation-fill-mode: backwards;
 
     @media screen and (max-width: 770px) {
       font-size: 1.6rem;
