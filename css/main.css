@@ -1354,6 +1354,10 @@ body {
   }
 }
 
+.hide-icon {
+  display: none;
+}
+
 .header {
   background-color: #014E56;
   display: -webkit-box;
